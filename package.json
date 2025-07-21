@@ -1,0 +1,15 @@
+{
+  "name": "game-of-life-lib",
+  "version": "1.0.0",
+  "description": "A typescript package for Conway's Game of Life.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "Lacho Tomov",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
