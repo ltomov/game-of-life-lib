@@ -7,12 +7,16 @@
   "scripts": {
     "watch-ts": "tsc --watch --project tsconfig.json",
     "build": "tsc --project tsconfig.json",
+    "test": "jest --config jest.config.js"
   },
   "author": "Lacho Tomov",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.0.15",
     "eventemitter3": "^5.0.1",
+    "jest": "^30.0.4",
+    "ts-jest": "^29.4.0",
     "typed-emitter": "^2.1.0",
     "typescript": "^5.8.3"
   }
