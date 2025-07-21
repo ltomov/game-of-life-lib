@@ -12,15 +12,17 @@ describe('Game of Life', () => {
     afterAll(async () => {
     })
 
-    describe('Main', () => {
-        it('Game state should be properly set', async () => {
+    describe('Game state', () => {
+        it('should be properly set', async () => {
             game.setState([{ row: 1, col: 1 }, { row: 1, col: 2 }, { row: 2, col: 1 }]);
 
             expect(game.getAliveCells()).toStrictEqual([{ row: 1, col: 1 }, { row: 1, col: 2 }, { row: 2, col: 1 }]);
             expect(game.getCntGenerations()).toBe(0);
         });
+    });
 
-        it('Generations should increase properly', async () => {
+    describe('Generations', () => {
+        it('should increase properly', async () => {
             game.setState([{ row: 1, col: 1 }, { row: 1, col: 2 }, { row: 2, col: 1 }]);
             expect(game.getCntGenerations()).toBe(0);
 
@@ -34,7 +36,7 @@ describe('Game of Life', () => {
             expect(game.getCntGenerations()).toBe(3);
         });
 
-        it('It should produce a simple oscillator', async () => {
+        it('should be able to produce a simple oscillator', async () => {
             const states = [
                 // initial state
                 [
