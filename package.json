@@ -2,14 +2,18 @@
   "name": "game-of-life-lib",
   "version": "1.0.0",
   "description": "A typescript package for Conway's Game of Life.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "watch-ts": "tsc --watch --project tsconfig.json",
+    "build": "tsc --project tsconfig.json",
   },
   "author": "Lacho Tomov",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^24.0.15",
+    "eventemitter3": "^5.0.1",
+    "typed-emitter": "^2.1.0",
     "typescript": "^5.8.3"
   }
 }
